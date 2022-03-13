@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container" autocomplete="off">
+      <form id="form" class="rounded" novalidate>
+        <h2 class="title">Register With Us</h2>
+        <div class="form-item">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            minlength="3"
+            maxlength="20"
+            id="username"
+            class="rounded"
+            placeholder="Enter username"
+            required
+          />
+          <small>Error message</small>
+        </div>
+        <div class="form-item">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="rounded" placeholder="Enter email" required />
+          <small>Error message</small>
+        </div>
+        <div class="form-item">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="rounded"
+            placeholder="Enter password"
+            minlength="5"
+            maxlength="20"
+            required
+          />
+          <small>Error message</small>
+        </div>
+        <div class="form-item">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            class="rounded"
+            placeholder="Enter password again"
+            minlength="5"
+            maxlength="20"
+            required
+          />
+          <small>Error message</small>
+        </div>
+        <button type="submit" class="submit-button rounded">Submit</button>
+      </form>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
