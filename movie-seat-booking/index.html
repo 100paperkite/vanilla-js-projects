@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Move Seat Booking</title>
+  </head>
+  <body>
+    <div id="movie-select-container">
+      <label for="movie-select">Pick a movie</label>
+      <select name="movices" id="movie-select">
+        <!-- 동적으로 채워넣기. 영화 사이트 크롤링해서. -->
+      </select>
+    </div>
+    <ul id="seat-info">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+    <div id="theater">
+      <div id="screen"></div>
+      <div id="seats"></div>
+    </div>
+    <div class="seats-cost"></div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
