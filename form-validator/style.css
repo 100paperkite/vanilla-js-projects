@@ -89,7 +89,7 @@ body {
   padding: 12px 0px;
   margin-bottom: 15px;
   border-radius: 5px;
-  background-color: rgb(14 165 233);
+  background-color: rgb(31 182 250);
   color: white;
   width: 100%;
 }
@@ -110,7 +110,11 @@ body {
   visibility: hidden;
 }
 
-.form button {
+form button {
   cursor: pointer;
   display: block;
+}
+
+form button:active {
+  background-color: rgb(14 165 233);
 }
